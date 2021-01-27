@@ -1,10 +1,10 @@
 describe('My First Test', () => {
 
-
+    /*
     before(() => {
      alert('testing before')
     })
-
+    */
 
   it('Visit Kitchen web', () => {
 
@@ -34,7 +34,10 @@ describe('My First Test', () => {
     cy.get('.action-div')
             .dblclick()
 
-    
+    /*
+    Going back, to default url
+    */
+    cy.go(-1)
 
   })
 })
